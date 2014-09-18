@@ -17,7 +17,7 @@ Fork and clone this repo.
 git clone git@github.com:YourUsername/jekyll-lambda.git
 ```
 
-Edit, add and modify as you wish. Then run with Jekyll command line utility.
+Edit, add and modify the theme and content as you wish. Then run with Jekyll command line utility.
 
 ```
 jekyll serve -w
