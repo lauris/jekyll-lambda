@@ -3,6 +3,12 @@ jekyll-lambda
 
 An ascetic theme for Jekyll. Originally used at http://lauris.github.io
 
+## Screenshot and Demo
+
+You can view the theme live at [my blog](http://lauris.github.io).
+
+![Jekyll Lambda Demo](https://raw.githubusercontent.com/lauris/jekyll-lambda/master/images/screenshot.png)
+
 ## Usage
 
 Install Jekyll.
