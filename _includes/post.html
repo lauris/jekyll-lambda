@@ -1,0 +1,35 @@
+<div class="entry">
+
+	<div class="entry-content">
+
+	  <header>
+	    <h1 class="entry-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+	    <p class="entry-meta">
+		    {{ page.date | date: "%b %-d, %Y" }}
+		    {% if page.category %} • Category: {{ page.category|capitalize }}{% endif %}
+	    </p>
+	  </header>
+
+	  <article class="entry-body">
+	  	{% if content %}
+	  		{{ content }}
+  		{% else %}
+	  		{{ page.excerpt }}
+	  		{% if page.content contains '<!-- more -->' %}
+	  		<p><a href="{{ page.url }}">Read more »</a></p>
+	  		{% endif %}
+  		{% endif %}
+	  </article>
+
+  </div>
+
+</div>
+{% if content and page.author_footer != false %}
+
+	{% include post_footer.html %}
+
+	{% if page.comments != false %}
+	    {% include disqus.html %}
+	{% endif %}
+
+{% endif %}

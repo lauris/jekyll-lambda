@@ -1,0 +1,285 @@
+/* reset */
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+body {
+    font: 14px/18px "Helvetica Neue", Arial, sans-serif;
+    padding-bottom: 40px;
+}
+
+a {
+    text-decoration: underline;
+    color: #2868a4;
+}
+a:hover {
+    text-decoration: none;
+}
+hr {
+    border-bottom: 1px solid #ccc;
+    border-top-style: none;
+}
+h1, h2, h3, h4, .links {
+    font-family:"Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+h1, h2 {
+    font-weight: 700;
+}
+h1 a, h2 a {
+    color: black;
+    text-decoration: none;
+}
+h1 a:hover, h2 a:hover {
+    text-decoration: underline;
+}
+em {
+    font-style: italic;
+}
+
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+#main-header {
+    padding-bottom: 25px;
+    border-bottom: 2px solid black;
+    margin: 40px auto 0 auto;
+}
+#site-title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: normal;
+    vertical-align: middle;
+}
+#site-title a {
+    color: black;
+    text-decoration: none;
+}
+#site-title a:hover {
+    text-decoration: underline;
+}
+#site-title a, #site-title img {
+    vertical-align: middle;
+}
+
+
+.links {
+    margin-top: 5px;
+    font-size: 16px;
+    vertical-align: middle;
+    line-height: normal;
+    color: #777;
+    padding-left: 1px;
+}
+.links a {
+    text-decoration: none;
+    color: #777;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.links a:hover {
+    text-decoration: underline;
+}
+.links a.active {
+    color: #444;
+}
+.links img {
+    vertical-align: top;
+    margin-right: 2px;
+}
+.links .github-link {
+    float: right;
+}
+
+#content {
+    margin: 40px 0 0 0;
+}
+
+#articles {
+    margin: auto;
+}
+#articles .notice {
+    padding: 0 0 20px 195px;
+}
+
+.entry {
+    overflow: auto;
+    margin: 0 0 35px 0;
+    padding-top: 35px;
+    border-top: 1px solid #e7e7e7;
+}
+.entry h1 {
+    font-weight: 700;
+}
+.article-list {
+    margin-top: 30px;
+}
+.article-list .entry:first-child {
+    border-top-style: none;
+    padding-top: 0;
+}
+.entry .entry-date, .entry .entry-content {
+    float: left;
+}
+.entry .entry-content {
+    width: 100%;
+    overflow: hidden;
+}
+.entry .entry-date {
+    padding: 30px 0 0 0;
+    font-size: 12px;
+    color: #707070;
+    width: 195px;
+    text-indent: 25px;
+    display: none;
+}
+.entry h1 {
+    font-size: 42px;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+.entry .entry-meta {
+    font-size: 12px;
+    color: #707070;
+}
+
+.entry .entry-body {
+    margin: 20px 0 15px 0;
+    font-size: 16px;
+    line-height: 27px;
+}
+.entry .entry-body strong,
+.entry .entry-body b {
+    font-weight: 600;
+}
+.entry .entry-body p {
+    margin: 15px 0;
+}
+.entry .entry-body p.caption {
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+    margin-top: -5px;
+    display: block;
+}
+.entry .entry-body h2 {
+    font-size: 18px;
+}
+.entry .entry-body ul {
+    margin: 15px 0 15px 10px;
+}
+.entry .entry-body ul li {
+    list-style: disc;
+    margin-left: 15px;
+}
+.entry .entry-body img {
+    margin: 10px 0 0 0;
+    max-width: 100%;
+    display: block;
+}
+
+.article-backlink {
+    padding-bottom: 13px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-left: 163px;
+}
+.article-backlink a {
+    display: inline-block;
+    background: url(../img/blog/back.gif) no-repeat left center;
+    height: 24px;
+    line-height: 23px;
+    padding-left: 32px;
+    font-size: 12px;
+}
+
+
+.article-author {
+    margin-bottom: 40px;
+    padding-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #e7e7e7;
+    overflow: auto;
+}
+.article-author .avatar {
+    float: left;
+}
+.article-author .name {
+    margin-top: 5px;
+    float: left;
+}
+.article-author h4 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.article-author h4 b {
+    font-weight: 600;
+}
+.article-author img {
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.article-author span {
+    margin-right: 10px;
+}
+
+
+.gist {
+    font-size: 14px;
+}
+
+.entry pre code {
+  border: 0;
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 14px;
+}
+.entry pre {
+  line-height: 18px;
+  border: 2px solid #ddd;
+  background: #fafafa;
+  padding: 10px 12px;
+  border-radius: 5px;
+  overflow: scroll;
+}
+
+/* terminal */
+.entry pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.post pre.terminal code { 
+    background-color: #333; 
+}
+
+@media all and (max-width: 550px) {
+    #site-title img {
+        width: 25px;
+    }
+    .links a {
+        margin-right: 2px;
+        font-size: 14px;
+    }
+    .links .github-link {
+        float: none;
+    }
+    .links .github-link img {
+        display: none;
+    }
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .entry h1 {
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 7px;
+    }
+    .article-author img {
+        display: none;
+    }
+}

@@ -1,0 +1,21 @@
+# Site settings
+title: Site Title
+author: Your Name
+author_avatar: https://gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=50
+email: alias@domain.tld
+description: Blog about whatever.
+baseurl: "" # optional
+url: "https://foo_bar.github.io"
+#twitter_username: foo_bar
+#github_username: foo_bar
+github_repo: foo_bar/foo_bar.github.io
+#google_analytics: UA-80085-YOUR-ID
+# disqus: disqus-id
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+excerpt_separator: "<!-- more -->"
+
+gems:
+  - jekyll-sitemap
