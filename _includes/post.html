@@ -3,7 +3,7 @@
 	<div class="entry-content">
 
 	  <header>
-	    <h1 class="entry-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+	    <h1 class="entry-title"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h1>
 	    <p class="entry-meta">
 		    {{ page.date | date: "%b %-d, %Y" }}
 		    {% if page.category %} • Category: {{ page.category|capitalize }}{% endif %}
@@ -16,7 +16,7 @@
   		{% else %}
 	  		{{ page.excerpt }}
 	  		{% if page.content contains '<!-- more -->' %}
-	  		<p><a href="{{ page.url }}">Read more »</a></p>
+	  		<p><a href="{{ page.url | prepend: site.baseurl }}">Read more »</a></p>
 	  		{% endif %}
   		{% endif %}
 	  </article>
