@@ -165,11 +165,15 @@ em {
 .entry .entry-body h2 {
     font-size: 18px;
 }
-.entry .entry-body ul {
+.entry .entry-body ul, ol  {
     margin: 15px 0 15px 10px;
 }
 .entry .entry-body ul li {
     list-style: disc;
+    margin-left: 15px;
+}
+.entry .entry-body ol li {
+    list-style: decimal;
     margin-left: 15px;
 }
 .entry .entry-body img {
@@ -252,8 +256,8 @@ em {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-.post pre.terminal code { 
-    background-color: #333; 
+.post pre.terminal code {
+    background-color: #333;
 }
 
 @media all and (max-width: 550px) {
