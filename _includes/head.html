@@ -7,7 +7,7 @@
     <meta name="description" content="{% if page.excerpt %}{% if page.content contains '<!-- more -->' %}{{ page.excerpt|strip_html|trim }}{% endif %}{% else %}{{ site.description }}{% endif %}">
 
     {% if page.image %}<meta name="thumbnail" content="{{ site.baseurl | prepend: site.url }}{{ page.image }}" />{% endif %}
-    
+
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="icon" type="image/png" href="{{ "/images/lambda-xl.png" | prepend: site.baseurl }}">
@@ -24,7 +24,7 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', {{ site.google_analytics }}, 'auto');
+      ga('create', '{{ site.google_analytics }}', 'auto');
       ga('send', 'pageview');
     </script>
     {% endif %}
